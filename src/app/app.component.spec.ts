@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tdd-angular-example'`, () => {
+  it(`should have as title 'TDD TODO'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tdd-angular-example');
+    expect(app.title).toEqual('TDD TODO');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tdd-angular-example app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('TDD of Angular');
   });
 });
